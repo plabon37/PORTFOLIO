@@ -1,0 +1,175 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #0f0f0f;
+  color: white;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Navbar */
+header {
+  background: #8f9f9b;
+  padding: 15px 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+/* Row & Columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 20px;
+}
+
+.col-4 {
+  width: 30%;
+  padding: 20px;
+  margin:5px;
+  border: #0f0f0f solid 1px;
+  text-align: center;
+}
+
+/* Home Section */
+.home{
+    background: rgb(97, 42, 31);
+    margin: 10px;
+    border-radius: 5%;
+}
+.home h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.home h3 {
+  font-size: 20px;
+  color: orange;
+}
+
+/* Image */
+.col-6 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #555;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.icon i {
+  pointer-events: none;
+}
+
+.icon:hover {
+  background: orange;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin: 10px 5px 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: orange;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: white;
+}
+
+/* Stats */
+.col-4 h2 {
+  font-size: 30px;
+  color: orange;
+}
+
+/* Services */
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.col-4 img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+/* About */
+.about {
+  background: #111;
+}
+
+.about .col-6 {
+  width: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .col-6,
+  .col-4 {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
